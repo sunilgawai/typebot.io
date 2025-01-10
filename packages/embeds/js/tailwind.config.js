@@ -1,4 +1,7 @@
 import defaultTheme from "tailwindcss/defaultTheme";
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 function rem2px(input, fontSize = 16) {
   if (input == null) {
@@ -59,3 +62,4 @@ const config = {
 };
 
 export default config;
+
